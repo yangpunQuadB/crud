@@ -1,0 +1,20 @@
+
+type Message = record {
+    id: nat64;
+    text: text;
+};
+type ManageResult = variant {
+    Message;
+    Err : text;
+};
+service : {
+    // Add a new task
+    create : (text) -> ();
+    read : (id: nat64) -> (Message);
+    update : (id: nat64,text:text) -> ();
+    delete : (id: nat64) -> ();
+     get_posts : (page_number: nat64, page_size: nat64) -> (vec Message );
+    latest_post : () -> (vec Message );
+
+    
+};

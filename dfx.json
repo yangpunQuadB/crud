@@ -1,0 +1,17 @@
+{
+  "canisters": {
+    "task3_backend": {
+      "candid": "src/task3_backend/task3_backend.did",
+      "package": "task3_backend",
+      "type": "rust"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
